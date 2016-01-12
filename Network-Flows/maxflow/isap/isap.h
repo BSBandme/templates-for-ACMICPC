@@ -77,4 +77,4 @@ struct sap {
 		if (tt == -1) t = n - 1;
 		else t = tt;
 	}
-} g;
+} ;

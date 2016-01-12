@@ -2,7 +2,7 @@ const int maxn1 = 100;
 int pri[maxn1], lpri, n, nxt[maxn1], to[maxn1];
 int q[maxn1], l;
 
-int main(){
+void primesieve(){
 //     solve prime in o(n)
 	for(int i = 3; i < maxn1 - 2; i += 2) nxt[i] = i + 2;
 	for(int i = maxn1 - 1; i > 3; i -= 2) to[i] = i - 2;
@@ -16,7 +16,4 @@ int main(){
 		}
 	}
 	for(int i = 2; i; i = nxt[i]) pri[lpri++] = i;
-	printf("%d", lpri);
-
-	return 0;
 }
